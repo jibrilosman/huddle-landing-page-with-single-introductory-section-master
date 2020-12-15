@@ -68,12 +68,11 @@ body {
     color: hsl(257, 40%, 49%);
     cursor: pointer;
     box-shadow: -20px 12px 20px hsla(257, 80%, 49%, 0.52);
+    transition: 0.3s ease-in-out;
 }
 .btn:hover {
     background-color: hsl(300, 69%, 71%);
     color: #ffffff;
-}
-.btn:active {
     transform: translateY(6px);
 }
 @media only screen and (min-width: 768px) {
@@ -85,7 +84,7 @@ body {
         flex-direction: row;
     }
     .main-content-items-img img {
-        width: 450px;
+        width: 540px;
     }
     .main-content-items-text {
         width: 400px;
@@ -103,18 +102,22 @@ body {
     word-spacing: 10px;
     cursor: pointer;
 }
-.fab,
-.far {
-    background-color: #ffffff;
+.fab {
+    font-weight: 400;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
 }
-a:link {
-    text-decoration: none;
-}
-a:visited {
-    text-decoration: none;
-}
-.icons a:hover {
+.fab:hover {
+    border: 2px solid hsl(300, 69%, 71%);;
     color: hsl(300, 69%, 71%);
+    transform: translateY(6px);
 }
 footer {
     display: flex;
